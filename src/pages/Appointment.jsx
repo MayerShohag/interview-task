@@ -140,7 +140,7 @@ const Appointment = () => {
                          </div>
                     </div>
                </div>
-               <div className="md:p-5 p-2 overflow-scroll">
+               <div className="md:p-5 p-2 overflow-scroll scroll-hidden">
                     <table className="border text-center w-full bg-[#111B3C] border-[#2B7FFF33] rounded-2xl overflow-hidden">
                          <thead>
                               <tr className="text-sm border-b border-[#2B7FFF33]">
@@ -204,37 +204,36 @@ const Appointment = () => {
                               ))}
                          </tbody>
                     </table>
+               </div>
+               <div className="flex items-center justify-center lg:gap-5 gap-2 py-10">
+                    <button className="flex items-center gap-2 focus:text-[#51A2FF] cursor-pointer">
+                         <MdKeyboardArrowLeft />
+                         <span>Previous</span>
+                    </button>
 
-                    <div className="flex items-center justify-center lg:gap-5 gap-2 my-10">
-                         <button className="flex items-center gap-2 focus:text-[#51A2FF] cursor-pointer">
-                              <MdKeyboardArrowLeft />
-                              <span>Previous</span>
-                         </button>
+                    <button className="focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
+                         1
+                    </button>
+                    <button className="focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
+                         2
+                    </button>
+                    <button className="focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
+                         3
+                    </button>
+                    <button className="hidden md:block focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
+                         4
+                    </button>
+                    <button className="hidden md:block focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
+                         ...
+                    </button>
+                    <button className="hidden md:block focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
+                         11
+                    </button>
 
-                         <button className="focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
-                              1
-                         </button>
-                         <button className="focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
-                              2
-                         </button>
-                         <button className="focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
-                              3
-                         </button>
-                         <button className="hidden md:block focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
-                              4
-                         </button>
-                         <button className="hidden md:block focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
-                              ...
-                         </button>
-                         <button className="hidden md:block focus:text-black text-[#51A2FF] focus:bg-[#A6C8FF] hover:bg-[#A6C8FF]/50 rounded-sm cursor-pointer px-4 py-2">
-                              11
-                         </button>
-
-                         <button className="flex items-center gap-2 focus:text-[#51A2FF] cursor-pointer">
-                              <span>Next</span>
-                              <MdKeyboardArrowRight />
-                         </button>
-                    </div>
+                    <button className="flex items-center gap-2 focus:text-[#51A2FF] cursor-pointer">
+                         <span>Next</span>
+                         <MdKeyboardArrowRight />
+                    </button>
                </div>
           </section>
      );
